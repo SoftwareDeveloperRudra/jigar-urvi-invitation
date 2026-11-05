@@ -2275,7 +2275,6 @@
             <a href="#couple" class="nav-btn nav-link-hide-mobile">Couple</a>
             <a href="#together" class="nav-btn nav-link-hide-mobile">Portrait</a>
             <a href="#event" class="nav-btn nav-link-hide-mobile">Details</a>
-            <a href="#gallery" class="nav-btn nav-link-hide-mobile">Gallery</a>
 
             <button class="music-btn" id="musicToggleBtn" onclick="toggleMusic()" aria-label="Toggle background music">
                 <div class="equalizer paused" id="navEqualizer">
@@ -2661,56 +2660,6 @@
         </div>
     </section>
 
-    <!-- ==========================================================================
-         SECTION 6: RESPONSIVE PHOTO GALLERY
-         ========================================================================== -->
-    <section class="gallery-section" id="gallery">
-        <div class="section-header reveal-on-scroll">
-            <span class="section-eyebrow">Capturing Moments</span>
-            <h2 class="section-title">Memories Gallery</h2>
-            <p class="section-desc">Sneak peeks into our journey together</p>
-            <div class="ornate-gold-divider">
-                <svg viewBox="0 0 24 24">
-                    <path d="M12 2L9 9H2L7 14L5 21L12 17L19 21L17 14L22 9H15L12 2Z" />
-                </svg>
-            </div>
-        </div>
-
-        <div class="gallery-grid" id="galleryContainer">
-            <!-- Items rendered dynamically from INVITATION_CONFIG.gallery -->
-        </div>
-    </section>
-
-    <!-- Lightbox Modal -->
-    <div id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photo Lightbox"
-        onclick="handleLightboxBackdrop(event)">
-        <div class="lightbox-content">
-            <button class="lightbox-close-btn" onclick="closeLightbox()" aria-label="Close Lightbox">&times;</button>
-
-            <div class="lightbox-preview-box" id="lightboxPreview">
-                <img class="lightbox-photo" id="lightboxPhoto" alt="" style="display:none">
-                <svg id="lightboxIcon" viewBox="0 0 24 24">
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                    <circle cx="8.5" cy="8.5" r="1.5" />
-                    <polyline points="21 15 16 10 5 21" />
-                </svg>
-                <div class="lightbox-title" id="lightboxTitle">Portrait Placeholder</div>
-                <div class="lightbox-subtitle" id="lightboxSubtitle">A Cherished Memory</div>
-                <div class="lightbox-instructions" id="lightboxInstructions">
-                    📷 Placeholder Slot Ready &mdash; Replace with photo anytime
-                </div>
-            </div>
-
-            <div class="lightbox-controls">
-                <button class="lightbox-nav-btn" onclick="prevLightboxImage()">&larr; Previous</button>
-                <span class="lightbox-counter" id="lightboxCounter">1 / 4</span>
-                <button class="lightbox-nav-btn" onclick="nextLightboxImage()">Next &rarr;</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Toast Notification Component -->
-    <div id="royalToast">Link copied to clipboard!</div>
 
     <!-- ==========================================================================
          FOOTER
